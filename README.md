@@ -1,2 +1,2 @@
-# DjangoProject
-Django Project
+# Django_tutorial_Udemy
+
