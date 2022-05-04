@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>HTML Input Types</h1>
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp">HTML input types</a>
+
+    <form>
+      <h1>Log In</h1>
+      <h2>Please Input Your Email and Password</h2>
+      <input type="email" name="useremail" value="Enter email">
+      <input type= "password" name="password" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+    <form>
+      <h1>Choose Color!</h1>
+      <h2>Click on Button!</h2>
+      <input type="color" name="" value="">
+
+    </form>
+    <form>
+      <label>
+        Enter Text:
+        <input type="text" name="" value="">
+      </label>
+      <label>
+        Enter Text:
+        <input type="text" name="" value="">
+      </label>
+    </form>
+    <form>
+      <label for="userinput">Enter Input:</label>
+      <input type="text" name="" placeholder="not required">
+      <input id = "userinput" type="text" name="" placeholder="Hello!" required = True>
+      <input type="submit" name="" value="submit">
+    </form>
+
+
+    <h1>Hotel feedback form</h1>
+    <form method="get">
+      <h2>Are you from inside the US? or Outside the US</h2>
+      <label for="inus">Inside:</label>
+      <input id = "inus" type="radio" name="loc" value="inside">
+
+      <label for="outusa">Outside</label>
+      <input id = "outusa" type="radio" name="loc" value="outside">
+
+      <h2>How was your service?</h2>
+
+      <select name="stars">
+        <option value="Great">3</option>
+        <option value="OK">2</option>
+        <option value="BAD">1</option>
+      </select>
+      <h2>Any other feedback?</h2>
+      <textarea name="myText" rows="8" cols="80"></textarea>
+      <input type="submit" name="" value="Submit">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
