@@ -1,2 +1,3 @@
-# Django_tutorial_Udemy
+# Python and Django Full Stack Web Developer Bootcamp
+
 
