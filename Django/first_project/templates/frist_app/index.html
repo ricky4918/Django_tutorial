@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Djago Level Two</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "CSS/my_style.css" %}" />
+    </head>
+    <body>
+        
+
+        <h1>Hi welcome to Django level 2!</h1>
+        <h2>Here are your access records:</h2>
+
+
+        <div class="djangotwo">
+            {% if access_records %}
+            <table>
+                    <thead>
+                        <th>Site Name</th>
+                        <th>Date Accessed</th>
+                    </thead>
+                
+
+                {% for acc in access_records %}
+
+                <tr>
+                    <td>{{ acc.name }}</td>
+                    <td>{{ acc.date }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+                <p>No ACCESS RECORDS FOUND!</p>
+
+            {% endif %}
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

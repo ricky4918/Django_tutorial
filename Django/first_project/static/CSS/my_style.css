@@ -1,3 +1,8 @@
 h1{
-    color: rgb(0, 174, 255)
+    color: rgb(255, 0, 128)
+}
+
+table, th, td{
+
+    border: 2px solid black
 }
